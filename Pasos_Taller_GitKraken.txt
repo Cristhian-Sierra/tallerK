@@ -1,0 +1,6 @@
+Fases
+1.Explicación de Git, GitHub y GitKraken
+2. Registro en GitHub 
+2.Instalación de GitKraken
+3.Ejercicio de Aplicación HTML
+Push, clone, publicación
