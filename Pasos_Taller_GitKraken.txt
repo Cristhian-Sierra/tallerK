@@ -4,3 +4,5 @@ Fases
 2.Instalación de GitKraken
 3.Ejercicio de Aplicación HTML
 Push, clone, publicación
+
+Manejo de tiempos
