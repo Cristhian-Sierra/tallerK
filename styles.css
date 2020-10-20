@@ -1,85 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web:wght@300&display=swap");
+html {
+  min-height: 100%;
+}
+
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0px;
-  }
-  
+  box-sizing: border-box;
+}
+
+h2, h3 {
+  margin: 0px;
+  display: inline-block;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  background-image: url(recursos/pegasus.png);
+  background-position: center;
+}
+
+header {
+  background-color: #428f66;
+  font-size: 30px;
+  font-family: "Titillium Web";
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 20%;
+  height: 388px;
+  background: white;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  height: 388px;
+}
+article :hover {
+  box-shadow: 0 0 12px #23adff;
+}
+article * :hover {
+  box-shadow: none;
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  background-color: #428f66;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  margin-top: 150px;
+}
+footer p, footer a {
+  display: inline-block;
+}
+
+.calculadora {
+  display: block;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #428f66;
+  width: 300px;
+  height: 300px;
+}
+
+.calculadora td button, #resultado {
+  background-color: white;
+  font-family: "Open Sans";
+  border: none;
+}
+
+.calculadora td button {
+  display: block;
+  width: 60px;
+  height: 30px;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.calculadora td:nth-child(4) button {
+  background-color: #c8e0cb;
+}
+
+#resultado {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 100px;
+  line-height: 100px;
+  overflow-y: scroll;
+}
+
+button#igual, button#reset {
+  background-color: #eed7b9;
+}
+
+@media screen and (max-width: 450px) {
   header {
-    background-color: rgb(40, 99, 209);
-    padding: 5px;
-    padding-bottom: 33px;
-    text-align: right;
-    font-size: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-style: italic;
-    color: white;
+    text-align: center;
   }
-  
-  nav {
-    float: left;
-    width: 20%;
-    height: 388px; 
-    background: #ccc;
-    padding: 20px;
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  article {
-    float: left;
-    padding: 20px;
-    width: 100%;
-    height: 388px; 
 
-  }
-  
-  section:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
   footer {
-    background-color: rgb(40, 99, 209);
-    padding: 10px;
-    text-align: center;
-    color: white;
+    margin-top: 33%;
   }
+}
+button {
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+button:after {
+  content: "";
+  background: #90EE90;
+  display: block;
+  position: relative;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
 
-  .calculadora{
-    display:block;
-    margin:0 auto;
-    padding:20px;
-    background-color: rgb(40, 99, 209);
-    width:300px;
-    height:300px;
-    border-radius: 25px;
-  }
-  .calculadora td button{
-    display:block;
-    width:50px;
-    height: 30px;
-    font-size: 25px;
-    border-radius: 25px;
-  }
-
-  #resultado{
-    display:block;
-    text-align: center;
-    font-size: 40px;
-    margin-bottom: 20px;
-    width:250px;
-    height: 100px;
-    line-height: 100px;
-    background-color:#fff;
-    border-radius: 25px;
-    overflow-y: scroll;
-    background-color: #e5e5e5;
-  }
-  
+/*# sourceMappingURL=styles.css.map */
